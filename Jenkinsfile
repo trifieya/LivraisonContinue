@@ -5,7 +5,7 @@ pipeline
     stage ('Pull'){
       steps{
         script{
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']],
                 userRemoteConfigs:[[
                     url: 'https://github.com/trifieya/LivraisonContinue.git'
                 ]]
