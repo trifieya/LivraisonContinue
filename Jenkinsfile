@@ -7,7 +7,7 @@ pipeline
         script{
             checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                 userRemoteConfigs:[[
-                    url: ''
+                    url: 'https://github.com/trifieya/LivraisonContinue.git'
                 ]]
             
             ])
