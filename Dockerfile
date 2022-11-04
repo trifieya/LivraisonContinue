@@ -1,7 +1,7 @@
 ## Stage1: Run nginx to serve application ##
 FROM nginx:1.17.1-alpine
 
-COPY ./dist/LivraisonContinue  /usr/share/nginx/html
+COPY ./dist/*  /usr/share/nginx/html
 
 EXPOSE 4201
 
