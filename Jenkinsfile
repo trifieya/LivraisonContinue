@@ -19,7 +19,7 @@ pipeline
     {
       steps {
         script{
-        sh "ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml -e "ansible_become_password=ubuntu" "
+        sh "ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml -e   'ansible_become_password=ubuntu' "
         }
       }
     }
