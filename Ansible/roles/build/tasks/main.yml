@@ -1,5 +1,5 @@
 ---
-  - name: "Build myapp"
-    shell: ng build --production
+  - name: Build myapp
+    shell: ng build --prod
     
     
