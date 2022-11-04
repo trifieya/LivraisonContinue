@@ -2,3 +2,5 @@
 # tasks file for build
                           - name: build app
                             shell: ng build --production
+                            args: 
+                              chdir="~/project/dir/"
