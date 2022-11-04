@@ -1,6 +1,5 @@
 ---
   - name: "Build myapp"
-    command: ng build --prod --aot --env:prod
-    args:
-      chdir: "~/project/dir/"
+    command: ng build --production
+    
     
