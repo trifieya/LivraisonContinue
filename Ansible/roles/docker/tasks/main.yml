@@ -3,7 +3,7 @@
   vars:
    ansible_python_interpreter: /usr/bin/python3
   docker_image:
-   name: angularprojforcd
+   name: devops
    build:
     path: /var/lib/jenkins/workspace/LivraisonContinue
     pull: no
@@ -12,8 +12,8 @@
    force_source: true
 - name: run container docker
   docker_container:
-   name: angularprojforcd_container
-   image: angularprojforcd:latest
+   name: livraisoncontinue_container
+   image: livraisoncontinue:latest
    state: started
    recreate: true
    ports:
