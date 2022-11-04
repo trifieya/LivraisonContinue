@@ -24,6 +24,12 @@ pipeline
         }
       }
     }
+    stage('Login Dockerhub')
+    {
+        steps {
+            sh 'docker login -u eyatrifii -p baguette22'
+        }
+    }
     stage ('docker')
     {
       steps {
