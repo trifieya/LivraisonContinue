@@ -1,5 +1,6 @@
 ---
 # tasks file for build
+                          tasks:
                           - name: build app
                             shell: ng build --production
                             args: 
