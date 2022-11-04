@@ -1,4 +1,4 @@
-- hosts: Server
+- hosts: 10.0.2.15
   gather_facts: true
   become: true
   roles:
