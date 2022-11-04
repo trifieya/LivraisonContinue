@@ -5,7 +5,7 @@
   docker_image:
    name: angularprojforcd
    build:
-    path: /var/lib/jenkins/workspace/cdProject
+    path: /var/lib/jenkins/workspace/LivraisonContinue
     pull: no
    source: build
    state: present
