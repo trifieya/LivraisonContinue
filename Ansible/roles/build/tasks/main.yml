@@ -2,6 +2,5 @@
   - name: "Build myapp"
     command: ng build --prod --aot --env:prod
     args:
-      chdir: /home/jeff/myapp/client/
-    environment:
-      PATH: /sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/home/jeff/.nvm/versions/node/v7.9.0/bin/
+      chdir: "~/project/dir/"
+    
