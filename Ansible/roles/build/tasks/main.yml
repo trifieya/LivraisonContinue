@@ -1,4 +1,4 @@
-tasks:
+---
   - name: "Build myapp"
     command: ng build --prod --aot --env:prod
     args:
