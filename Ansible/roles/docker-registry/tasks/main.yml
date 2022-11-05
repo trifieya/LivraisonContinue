@@ -6,10 +6,10 @@
    username: "eyatrifii"
    password: "baguette22"
    
- - name: push image to dockerhub
-   docker_image:
-    name: devops:latest
-    repository: eyatrifii/livraisoncontinue
-    push: yes
-    source: local
+- name: push image to dockerhub
+  docker_image:
+   name: devops:latest
+   repository: eyatrifii/livraisoncontinue
+   push: yes
+   source: local
    
