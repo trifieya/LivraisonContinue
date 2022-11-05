@@ -33,12 +33,12 @@ pipeline
         }
       }
     }
-    stage('Login Dockerhub')
-    {
-        steps {
-            sh 'docker login -u eyatrifii -p baguette22'
-        }
-    }
+    stage('Login') {
+
+      steps {
+	sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+			}
+		}
     stage ('docker registry ')
     {
       steps {
