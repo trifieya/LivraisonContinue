@@ -9,7 +9,7 @@
  - name: push image to dockerhub
    docker_image:
     name: devops:latest
-    repository: eyatrifii/devops
+    repository: eyatrifii/livraisoncontinue
     push: yes
     source: local
    
