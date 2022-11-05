@@ -1,0 +1,15 @@
+---
+# tasks file for docker-registry
+- name: login dockerhub
+  docker_login:
+   email: "eya.trifi@esprit.tn"
+   username: "eyatrifii"
+   password: "baguette22"
+   
+ - name: push image to dockerhub
+   docker_image:
+    name: devops:latest
+    repository: eyatrifii/devops
+    push: yes
+    source: local
+   
